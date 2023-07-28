@@ -12,11 +12,11 @@
                             <span class="subheading">{{ products.prodname }}</span>
                             <span class="subheading"><span>Price</span>: {{ products.price }}
                             <span class="subheading"><strong>{{ products.date|date('F j,Y, g:i a') }}</strong></span>
-                            <p>Description: {{ products.description }}</p>
                         </div>
                     </div>
                 </div>
             </div>
+            <p>Description: {{ products.description }}</p>
         </div>
     </section>
 {% endblock %}

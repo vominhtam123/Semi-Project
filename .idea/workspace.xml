@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40ac072b-dd31-4440-ae5d-94e451528545" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProductController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/product/create.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product/create.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/product/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product/details.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product/details.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/product/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,6 +160,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Downloads/Test-asm" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -201,7 +200,9 @@
       <workItem from="1690477038912" duration="13000" />
       <workItem from="1690477059472" duration="13344000" />
       <workItem from="1690491712507" duration="269000" />
-      <workItem from="1690532120356" duration="6511000" />
+      <workItem from="1690532120356" duration="7951000" />
+      <workItem from="1690560463360" duration="4826000" />
+      <workItem from="1690567242186" duration="627000" />
     </task>
     <servers />
   </component>
@@ -217,10 +218,14 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="165" y="193" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1690392521785" />
-    <state x="477" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1690532121458">
+    <state x="279" y="78" key="SettingsEditor" timestamp="1690567273348">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="477" y="260" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1690532121458" />
+    <state x="279" y="78" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1690567273348" />
+    <state x="477" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1690567243290">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="477" y="260" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1690567243290" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

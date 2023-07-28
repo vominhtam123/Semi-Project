@@ -22,12 +22,12 @@
                                             <div class="card-body">
                                                 <h2 class="mb-0"><a href="">{{ product.prodname }}</a></h2>
                                                 <div class="d-flex mb-2">
-                                                    <span class="cat">{{ product.description }}</span>
+
                                                     <p class="price ml-auto">{{ product.price }}<span>$</span></p>
                                                 </div>
-                                                <div><a href="{{path('product_details',{'id':product.id})}} " class='btn btn-success'>View</a>
-                                                    <a href="{{path('product_edit',{'id':product.id})}} " class='btn btn-warning '>Edit</a>
-                                                    <a href="{{ path('product_delete', {'id': product.id}) }} "class='btn btn-danger'>Delete</a></div>
+{#                                                <div><a href="{{path('product_details',{'id':product.id})}} " class='btn btn-success'>View</a>#}
+{#                                                    <a href="{{path('product_edit',{'id':product.id})}} " class='btn btn-warning '>Edit</a>#}
+{#                                                    <a href="{{ path('product_delete', {'id': product.id}) }} "class='btn btn-danger'>Delete</a></div>#}
                                                 <br>
 
                                                 <div><p class="d-flex mb-0 d-block "><a href="#" class="btn btn-primary py-2 mr-1 ">Booknow</a> <a href="{{path('product_details',{'id':product.id})}}" class="btn btn-secondary py-2 ml-1">Details</a></p></div>
@@ -58,7 +58,7 @@
             <div class="row d-flex">
                 <div class="col-md-4 d-flex ftco-animate">
                     <div class="blog-entry justify-content-end">
-                        <a href="blog-single.html" class="block-20" style="background-image: url('images/bg_h16.jpg');">
+                        <a href="blog-single.html" class="block-20" style="background-image: url('images/bg_25.jpg');">
                         </a>
                         <div class="text pt-4">
                             <div class="meta mb-3">
