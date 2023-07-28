@@ -1,0 +1,109 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+
+    <section class="ftco-section ftco-no-pt bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+                    <span class="subheading">What we offer</span>
+                    <h2 class="mb-2">Outstanding luxury phone</h2>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    {% for product in products %}
+                        <div class="col-md-3">
+                            <div class="car-wrap rounded ftco-animate">
+                                <div class="card">
+                                    <tr>
+                                        <td><img src="{{ asset('upload/productImage/' ~ product.productimage) }}" height="250px" />
+                                        </td>
+                                        <div class="text">
+                                            <div class="card-body">
+                                                <h2 class="mb-0"><a href="">{{ product.prodname }}</a></h2>
+                                                <div class="d-flex mb-2">
+                                                    <span class="cat">{{ product.description }}</span>
+                                                    <p class="price ml-auto">{{ product.price }}<span>$</span></p>
+                                                </div>
+                                                <div><a href="{{path('product_details',{'id':product.id})}} " class='btn btn-success'>View</a>
+                                                    <a href="{{path('product_edit',{'id':product.id})}} " class='btn btn-warning '>Edit</a>
+                                                    <a href="{{ path('product_delete', {'id': product.id}) }} "class='btn btn-danger'>Delete</a></div>
+                                                <br>
+
+                                                <div><p class="d-flex mb-0 d-block "><a href="#" class="btn btn-primary py-2 mr-1 ">Booknow</a> <a href="{{path('product_details',{'id':product.id})}}" class="btn btn-secondary py-2 ml-1">Details</a></p></div>
+                                            </div>
+                                        </div>
+
+                                    </tr>
+                                </div>
+                            </div>
+                        </div>
+                    {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <span class="subheading">Information</span>
+                    <h2>Recent Product </h2>
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry justify-content-end">
+                        <a href="blog-single.html" class="block-20" style="background-image: url('images/bg_h16.jpg');">
+                        </a>
+                        <div class="text pt-4">
+                            <div class="meta mb-3">
+                                <div><a href="#">Oct. 29, 2019</a></div>
+                                <div><a href="#">Admin</a></div>
+                                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                            </div>
+                            <h3 class="heading mt-2"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                            <p><a href="#" class="btn btn-primary">Read more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry justify-content-end">
+                        <a href="blog-single.html" class="block-20" style="background-image: url('images/bg_h16.jpg');">
+                        </a>
+                        <div class="text pt-4">
+                            <div class="meta mb-3">
+                                <div><a href="#">Oct. 29, 2019</a></div>
+                                <div><a href="#">Admin</a></div>
+                                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                            </div>
+                            <h3 class="heading mt-2"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                            <p><a href="#" class="btn btn-primary">Read more</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry">
+                        <a href="blog-single.html" class="block-20" style="background-image: url('images/bg_15.jpg');">
+                        </a>
+                        <div class="text pt-4">
+                            <div class="meta mb-3">
+                                <div><a href="#">Oct. 29, 2019</a></div>
+                                <div><a href="#">Admin</a></div>
+                                <div><a href="#" class="meta-chat"><span class="icon-chat"></span> 3</a></div>
+                            </div>
+                            <h3 class="heading mt-2"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                            <p><a href="#" class="btn btn-primary">Read more</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
+

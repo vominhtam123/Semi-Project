@@ -1,0 +1,106 @@
+{% extends 'base.html.twig' %}
+
+
+{% block body %}
+    {{ form_start(form) }}
+    <section class="ftco-section contact-section">
+        <div class="container">
+            <div class="row d-flex mb-5 contact-info">
+                <div class="col-md-4">
+                    <div class="row mb-5">
+                        <div class="col-md-12">
+                            <div class="border w-100 p-4 rounded mb-2 d-flex">
+                                <div class="icon mr-3">
+                                    <span class="icon-map-o"></span>
+                                </div>
+                                <p>
+                                    <span>Address:</span>Thuy Loi 4 Apartment, Binh Thanh District
+                                    Ho Chi Minh City Viet Nam
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="border w-100 p-4 rounded mb-2 d-flex">
+                                <div class="icon mr-3">
+                                    <span class="icon-mobile-phone"></span>
+                                </div>
+                                <p>
+                                    <span>Phone:</span>
+                                    <a href="tel://1234567920">0833127874</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="border w-100 p-4 rounded mb-2 d-flex">
+                                <div class="icon mr-3">
+                                    <span class="icon-envelope-o"></span>
+                                </div>
+                                <p>
+                                    <span>Email:</span>
+                                    <a href="mailto:info@yoursite.com">minhtamvo04072003@gmail.com</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8 block-9 mb-md-5">
+                        <div class="form-group" >
+                            <label for="category">Category</label>
+                            {{ form_widget(form.category,{
+                                'attr':{
+                                    'class':'form-control'
+                                }
+                            }) }}
+                        </div>
+                        <div class="form-group">
+                            <label for="category">Product Name:</label>
+                            {{ form_widget(form.prodname,{
+                                'attr':{
+                                    'class':'form-control',
+                                    'placeholder': 'Product name'
+                                }
+                            }) }}
+                        </div>
+                        <div class="form-group">
+                            <label for="category">Price:</label>
+                            {{ form_widget(form.price,{
+                                'attr':{
+                                    'class':'form-control',
+                                    'placeholder': 'Price'
+                                }
+                            }) }}
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Description:</label>
+                            {{ form_widget(form.description,{
+                                'attr':{
+                                    'class':'form-control',
+                                    'placeholder': 'Description'
+                                }
+                            }) }}
+                        </div>
+                        <div class="form-group">
+                            <label for="due_date">Date</label>
+                            {{ form_widget(form.date,{
+                                'attr':{
+                                    'class':'form-control'
+                                }
+                            }) }}
+                        </div>
+                        <div class="form-group">
+                            <label for="due_date">Image</label>
+                            {{ form_widget(form.productImage,{
+
+                            }) }}
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" name="create_product" value="Create" class="btn btn-primary"/>
+                        </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{ form_end(form) }}
+{% endblock %}
