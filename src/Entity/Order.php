@@ -34,6 +34,10 @@ class Order
     #[ORM\ManyToMany(targetEntity: Product::class, mappedBy: 'ordername')]
     private Collection $Products;
 
+    #[ORM\ManyToOne(inversedBy: 'Orders')]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?User $username = null;
+
     public function __construct()
     {
         $this->Products = new ArrayCollection();
@@ -116,6 +120,18 @@ class Order
         if ($this->Products->removeElement($product)) {
             $product->removeOrdername($this);
         }
+
+        return $this;
+    }
+
+    public function getUsername(): ?User
+    {
+        return $this->username;
+    }
+
+    public function setUsername(?User $username): static
+    {
+        $this->username = $username;
 
         return $this;
     }

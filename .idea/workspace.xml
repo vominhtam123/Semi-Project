@@ -3,9 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="40ac072b-dd31-4440-ae5d-94e451528545" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Order.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Order.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/product/details.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product/details.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/product/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/product/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +204,8 @@
       <workItem from="1690491712507" duration="269000" />
       <workItem from="1690532120356" duration="7951000" />
       <workItem from="1690560463360" duration="4826000" />
-      <workItem from="1690567242186" duration="627000" />
+      <workItem from="1690567242186" duration="1303000" />
+      <workItem from="1690593144564" duration="4763000" />
     </task>
     <servers />
   </component>
@@ -222,10 +225,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="279" y="78" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1690567273348" />
-    <state x="477" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1690567243290">
+    <state x="477" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1690593147758">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="477" y="260" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1690567243290" />
+    <state x="477" y="260" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1690593147758" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

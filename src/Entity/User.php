@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 use Symfony\Component\Security\Core\User\PasswordAuthenticatedUserInterface;
@@ -28,6 +30,17 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
      */
     #[ORM\Column]
     private ?string $password = null;
+
+    #[ORM\Column(length: 255, nullable: true)]
+    private ?string $username = null;
+
+    #[ORM\OneToMany(mappedBy: 'username', targetEntity: Order::class)]
+    private Collection $Orders;
+
+    public function __construct()
+    {
+        $this->Orders = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -97,5 +110,47 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     {
         // If you store any temporary, sensitive data on the user, clear it here
         // $this->plainPassword = null;
+    }
+
+    public function getUsername(): ?string
+    {
+        return $this->username;
+    }
+
+    public function setUsername(?string $username): static
+    {
+        $this->username = $username;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Order>
+     */
+    public function getOrders(): Collection
+    {
+        return $this->Orders;
+    }
+
+    public function addOrder(Order $order): static
+    {
+        if (!$this->Orders->contains($order)) {
+            $this->Orders->add($order);
+            $order->setUsername($this);
+        }
+
+        return $this;
+    }
+
+    public function removeOrder(Order $order): static
+    {
+        if ($this->Orders->removeElement($order)) {
+            // set the owning side to null (unless already changed)
+            if ($order->getUsername() === $this) {
+                $order->setUsername(null);
+            }
+        }
+
+        return $this;
     }
 }

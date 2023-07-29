@@ -3,6 +3,28 @@
 {% block title %}Register{% endblock %}
 
 {% block body %}
+    {{ form_end(registrationForm) }}
+    <div id="bg">
+        <div class="module">
+            <ul>
+                <li class="tab activeTab"><img src="https://i.imgur.com/Fk1Urva.png" alt="" class="icon"/></li>
+                <li class="tab" ><img src="https://i.imgur.com/ZsRgIDD.png" alt="" class="icon"/></li>
+                <li class="tab" ><img src="https://i.imgur.com/34Q50wo.png" alt="" class="icon"/></li>
+                <li class="tab" ><img src="https://i.imgur.com/LCCJ06E.png" alt="" class="icon"/></li>
+            </ul>
+            {{ form_end(registrationForm) }}
+            <form class="form">
+                <input type="text" placeholder="Email" class="textbox" value="{{ form_row(registrationForm.email) }}" />
+                <input type="password" placeholder="Password" class="textbox" value=" {{ form_row(registrationForm.plainPassword, {
+                    label: 'Password'
+                }) }}" />
+                {{ form_end(registrationForm) }}
+                <button type="submit" class="btn">Register</button>
+            </form>
+
+        </div>
+    </div>
+    {{ form_end(registrationForm) }}
     <h1>Register</h1>
 
     {{ form_errors(registrationForm) }}
