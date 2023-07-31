@@ -35,7 +35,7 @@ class ProductController extends AbstractController
 
 
         $product = new Product();
-        $product->setProdnam('Keyboard');
+        $product->setProdname('Keyboard');
         $product->setPrice(19.99);
         $product->setDate(new DateTime(0-2-0));
         $product->setDescription('Ergonomic and stylish!');
