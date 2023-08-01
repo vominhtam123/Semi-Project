@@ -24,9 +24,9 @@ class ProductController extends AbstractController
     {
         $products = $doctrine->getRepository('App\Entity\Product')->findAll();
         // $categoryName = $products->getCategory()->getCatName()->toArray();
-        $categories = $doctrine->getRepository('App\Entity\Category')->findAll();
+
         return $this->render('product/index.html.twig', ['products' => $products,
-            'categories'=>$categories
+
         ]);
     }
     #[Route('/product', name:'product')]
