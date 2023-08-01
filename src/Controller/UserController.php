@@ -7,15 +7,22 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
-class UserCtrollerController extends AbstractController
+class UserController extends AbstractController
 {
     #[Route('/user', name: 'user_list')]
     public function listAction(ManagerRegistry $doctrine): Response
     {
-        $username = $doctrine->getRepository('App\Entity\User')->findAll();
+        $products = $doctrine->getRepository('App\Entity\Product')->findAll();
+        // $categoryName = $products->getCategory()->getCatName()->toArray();
         return $this->render('user/index.html.twig', [
-            'username' => 'username',
+            'products' => $products,
         ]);
+    }#[Route('/user/details/{id}', name: 'user_details')]
+    public  function detailsAction(ManagerRegistry $doctrine ,$id)
+    {
+        $products = $doctrine->getRepository('App\Entity\Product')->find($id);
+
+        return $this->render('user/details.html.twig', ['products' => $products]);
     }
 
 }

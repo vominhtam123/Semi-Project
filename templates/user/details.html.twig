@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <a href="{{ path('product_list') }}" class="btn btn-default">Back to Product List</a>
+    <section class="ftco-section ftco-car-details">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <div class="car-details">
+                        <div><img src="{{ asset('upload/productImage/' ~ products.productimage) }}" height="250px" /></div>
+                        <div class="text text-center">
+                            <span class="subheading">{{ products.prodname }}</span>
+                            <span class="subheading"><span>Price</span>: {{ products.price }}
+                            <span class="subheading"><strong>{{ products.date|date('F j,Y, g:i a') }}</strong></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p>Description: {{ products.description }}</p>
+        </div>
+    </section>
+{% endblock %}

@@ -3,10 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="40ac072b-dd31-4440-ae5d-94e451528545" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/index.html.twig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/login/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/registration/register.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -207,6 +209,10 @@
       <workItem from="1690593144564" duration="10068000" />
       <workItem from="1690742759872" duration="2117000" />
       <workItem from="1690796345639" duration="6739000" />
+      <workItem from="1690829280911" duration="556000" />
+      <workItem from="1690874965867" duration="437000" />
+      <workItem from="1690875415124" duration="1339000" />
+      <workItem from="1690877160485" duration="1365000" />
     </task>
     <servers />
   </component>
@@ -218,18 +224,18 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="499" y="190" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.864@0.0.1536.864" timestamp="1690600360839" />
-    <state x="165" y="193" key="FileChooserDialogImpl" timestamp="1690796352917">
+    <state x="165" y="193" key="FileChooserDialogImpl" timestamp="1690874984141">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="165" y="193" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1690796352917" />
+    <state x="165" y="193" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1690874984141" />
     <state x="279" y="78" key="SettingsEditor" timestamp="1690567273348">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="279" y="78" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1690567273348" />
-    <state x="477" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1690796346101">
+    <state x="477" y="260" key="com.intellij.ide.util.TipDialog" timestamp="1690877161599">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="477" y="260" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1690796346101" />
+    <state x="477" y="260" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1690877161599" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
